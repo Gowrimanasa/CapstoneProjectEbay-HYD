@@ -1,15 +1,9 @@
-package CPpages;
+package utils;
+import java.util.regex.*;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-import org.openqa.selenium.WebElement;
-
-public class regExpMatcher {
-
-	public void regExpChecker()
-	{
-	
+public class regExpMatcher  {
+    public static void main(String[] args) {
         /*
     	System.setProperty ("webdriver.chrome.driver","D://seleniu//chromedriver.exe" );
 		
@@ -34,24 +28,24 @@ public class regExpMatcher {
      	Pattern p = Pattern.compile("[0-9]{2}:[0-9]{2}:[0-9]{2}");
         
      	
-    //	String exampleString = "11 May 2024";
+    	//String exampleString = "Jun 14, 2021";
     	
     	
-    //	Pattern p = Pattern.compile("[0-9]{1} [A-Z,a-z]{3} [0-9]{4}");
-    		
-    	boolean m = patternMatch(exampleString,p);
+    	//Pattern p = Pattern.compile("[A-Z,a-z]{3} [0-9]{2}, [0-9]{4}");
+    		boolean m = patternMatch(exampleString,p);
 		
     		System.out.println(m);
     	
+        //Close the browser
+      //  driver.quit();
     }
-
     
-    public static boolean patternMatch(String actual_timeDisplayed, Pattern p)
+    
+    public static boolean patternMatch(String s, Pattern p)
     {
-    	Matcher m = p.matcher(actual_timeDisplayed);
+    	Matcher m = p.matcher(s);
         
         return m.matches();
         
     }
-
 }
