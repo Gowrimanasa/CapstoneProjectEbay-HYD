@@ -1,4 +1,4 @@
-package CPpages;
+package CapstoneProject;
 
 import static org.junit.Assert.*;
 

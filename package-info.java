@@ -1,1 +1,1 @@
-package CPpages;
+package CPtests;
