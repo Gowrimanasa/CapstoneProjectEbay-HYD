@@ -43,9 +43,9 @@ public class EbayLoginTest {
 //	public void doLogin()
 //	{
 //		ebay.filesignin();
-	//	ebay.fileusername("Lavanya.burri123@gmail.com");
+	//	ebay.fileusername("manasa.v1@gmail.com");
 		//ebay.Clickcontinuebtn();
-		//ebay.filepassword("Lavanya@0107");
+		//ebay.filepassword("manasa@v1");
 		//ebay.Clickloginbtn();
 		
 	
@@ -90,7 +90,7 @@ public class EbayLoginTest {
 				Assert.assertEquals(true, ebay.ChkSearch());
 			}
 
-
+}
 		
 		
 			
@@ -103,6 +103,6 @@ public class EbayLoginTest {
 	
 		
 		
-	}
+	
 
 
